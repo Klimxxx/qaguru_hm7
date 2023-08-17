@@ -10,6 +10,7 @@ def test_csv1():
         assert csvwriter.writerow(['Bonny', 'Born', 'Peter'])
         assert csvwriter.writerow(['Alex', 'Serj', 'Yana'])
 
+
 def test_csv2():
     with open(file_path) as csv_file:
         csvreader = csv.reader(csv_file, delimiter=';')

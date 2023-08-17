@@ -1,5 +1,4 @@
-import csv
-import os
+import csv, os
 
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 file_path = os.path.join('resources/new_csv.csv')

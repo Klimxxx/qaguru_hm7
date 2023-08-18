@@ -12,7 +12,7 @@ def test_csv1():
 
 
 def test_csv2():
-    with open(file_path) as csv_file:
+    with open(file_path, newline='') as csv_file:
         csvreader = csv.reader(csv_file, delimiter=';')
         for row in csvreader:
             print(row)

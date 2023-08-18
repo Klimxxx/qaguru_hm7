@@ -19,3 +19,4 @@ with zipfile.ZipFile(archive_name, 'a') as zipf:
             print(f'Содержимое архива: {zipf.namelist()}')
             assert zipf.namelist() == ['docs-pytest-org-en-latest.pdf', 'file_example_XLS_10.xls',
                                        'file_example_XLSX_50.xlsx', 'new_csv.csv']
+            os.remove('tmp.zip')

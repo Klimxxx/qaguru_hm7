@@ -5,7 +5,7 @@ file_path = os.path.join('resources/new_csv.csv')
 
 
 def test_csv1():
-    with open(file_path, 'w') as csv_file:
+    with open(file_path, 'w', newline='') as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=';')
         assert csvwriter.writerow(['Bonny', 'Born', 'Peter'])
         assert csvwriter.writerow(['Alex', 'Serj', 'Yana'])

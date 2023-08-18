@@ -7,7 +7,7 @@ file3_path = os.path.join('resources/file_example_XLSX_50.xlsx')
 file4_path = os.path.join('resources/new_csv.csv')
 archive_name = 'tmp.zip'
 
-with zipfile.ZipFile(archive_name, 'a') as zipf:
+with zipfile.ZipFile(archive_name, 'w') as zipf:
     zipf.write(file1_path, 'docs-pytest-org-en-latest.pdf')
     zipf.write(file2_path, 'file_example_XLS_10.xls')
     zipf.write(file3_path, 'file_example_XLSX_50.xlsx')
